@@ -1,0 +1,12 @@
+<h3>Fitbit Leaderboard</h3>
+
+<div id="fitbit-data">
+  <ul>
+    <li data-foreach-person="people" data-bind-class="person.style">
+      <img data-bind-src="person.avatar" />
+      <div class="name" data-bind="person.name"></div>
+      <div class="steps" data-bind="person.steps | append ' steps'"></div>
+      <div class="rank" data-bind="person.rank"></div>
+    </li>
+  </ul>
+</div>

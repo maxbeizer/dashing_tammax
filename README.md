@@ -1,5 +1,18 @@
 # Dashing Tammax
 
+## Config
+
+```
+# .fitbit.yml
+---
+:oauth:
+  :consumer_key:
+  :consumer_secret:
+  :token:
+  :secret:
+  :user_id:
+```
+
 ## Spin Up
 
 ```
