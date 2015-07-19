@@ -13,10 +13,15 @@
   :user_id:
 ```
 
+```
+FORECAST_IO_API_KEY
+```
+
 ## Spin Up
 
 ```
 bundle install
+cp .env.dist .env
 dashing start
 open http://localhost:3030
 ```
