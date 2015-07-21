@@ -1,0 +1,22 @@
+$background-color: #ff0000;
+$highlight: #5ac7c8;
+
+.widget-next-bus {
+  position: relative;
+  background-color: $background-color;
+
+  h3 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  li {
+    font-weight: bold;
+    padding: 0.5em 0 0 15%;
+    text-align: left;
+  }
+
+  span {
+    font-weight: normal;
+  }
+}
