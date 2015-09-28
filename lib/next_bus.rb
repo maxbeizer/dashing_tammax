@@ -4,20 +4,15 @@ require 'json'
 require 'time'
 
 module NextBus
-  BASE_URI                       = 'http://nextbus.jt2k.com/api/stop/'
-  PARAMS                         = "?key=#{ENV['NEXT_BUS_API_KEY']}"
-  CHARLOTTE_AND_46TH_STOP_ID     = 'CXIRICHL'
-  WEST_END_AND_ELMINGTON_STOP_ID = 'WESELMEN'
+  BASE_URI                         = 'http://nextbus.jt2k.com/api/stop/'
+  PARAMS                           = "?key=#{ENV['NEXT_BUS_API_KEY']}"
+  NOLENSVILLE_AND_THOMPSON_STOP_ID = 'NOLTHONN'
 
   class << self
     attr_accessor :uri
 
-    def west_end
-      next_stop WEST_END_AND_ELMINGTON_STOP_ID
-    end
-
-    def charlotte
-      next_stop CHARLOTTE_AND_46TH_STOP_ID
+    def nolensville_and_thompson
+      next_stop NOLENSVILLE_AND_THOMPSON_STOP_ID
     end
 
     private
